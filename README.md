@@ -38,3 +38,25 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+Errors
+
+        npm run dev
+
+        > guitarla_next@0.1.0 dev
+        > next dev
+
+        ready - started server on 0.0.0.0:3000, url: http://localhost:3000
+        wait  - compiling...
+        event - compiled client and server successfully in 1130 ms (128 modules)
+        wait  - compiling / (client and server)...
+        wait  - compiling...
+        warn  - Attempted to load @next/swc-darwin-x64, but it was not installed
+        error - ./pages/index.js
+        TypeError: Cannot read properties of undefined (reading 'isWasm')
+        error - Failed to load SWC binary for darwin/x64, see more info here: https://nextjs.org/docs/messages/failed-loading-swc
+        
+Solution: https://github.com/vercel/next.js/discussions/30468?sort=top
+
+Simply remove node_modules, re run npm i or yarn install, and ensure npm or yarn downloads all binaries/packages with no problem on one flight and Voila!
