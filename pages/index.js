@@ -6,14 +6,19 @@ import Layout from '../components/Layout'
 
 export default function Home() {
   return (
-    <div >
-      <Layout 
-        pagina='Inicio'
+   
+    <div>
+      <Layout
+      pagina='Inicio'
       >
-      <h1>Desde inicio</h1>
+      <h1>desde Inicio</h1>
       </Layout>
 
-    
-    </div>
+      
+      
+      
+      </div>
+      
+      
   )
 }
