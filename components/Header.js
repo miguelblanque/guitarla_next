@@ -8,16 +8,18 @@ const Header = () => {
     <header className={styles.header}>
     
         <div className="contenedor">
-            <Link href="/">
-              <Image width={400} height={100} src="/img/logo.svg" alt="Imagen Logo"/>
-            </Link>
+            <div className={styles.barra}>
+                  <Link href="/">
+                    <Image width={400} height={100} src="/img/logo.svg" alt="Imagen Logo" />
+                  </Link>
 
-            <nav className={styles.navegacion}>
-                <Link href="/">Inicio</Link>
-                <Link href="/nosotros">Nosotros</Link>
-                <Link href="/blog">Blog</Link>
-                <Link href="/tienda">Tienda</Link>
-            </nav>
+                  <nav className={styles.navegacion}>
+                      <Link href="/">Inicio</Link>
+                      <Link href="/nosotros">Nosotros</Link>
+                      <Link href="/blog">Blog</Link>
+                      <Link href="/tienda">Tienda</Link>
+                  </nav>
+            </div>
         </div>
     </header>
   )
