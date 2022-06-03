@@ -2,15 +2,15 @@
 import Image from 'next/image'
 import Layout from '../components/Layout'
 
-const Nosotros = () => {
+const Blog = () => {
   return (
     <Layout 
-    pagina='Nosotros'
+    pagina='Blog'
     >
-    <h1>Nosotros</h1>
+    <h1>Blog</h1>
     </Layout>
  
   )
 }
 
-export default Nosotros 
+export default Blog 
