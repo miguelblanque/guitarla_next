@@ -60,3 +60,26 @@ Errors
 Solution: https://github.com/vercel/next.js/discussions/30468?sort=top
 
 Simply remove node_modules, re run npm i or yarn install, and ensure npm or yarn downloads all binaries/packages with no problem on one flight and Voila!
+
+
+Strapi - CMS Headless
+
+npx create-strapi-app@3.6.8
+
+yarn install --ignore-engines
+
+solucionar error de versiones:
+
+npm install --force -g node@14.18.2
+
+
+
+
+Consumir API
+
+cuando la informacion no cambia en cada request utilizamos:
+getStaticProps- Obtener los dataos cuando se crea el build
+getStaticPaths- Obtener el listado de paginas que se van a crear cuando se realiza un build
+
+Cuando la informacion cambia continuamente utilizamos.
+getServerSideProps - Los datos se obtienen en cada request

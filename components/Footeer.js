@@ -5,7 +5,7 @@ import styles from '../styles/Footer.module.css'
 const Footeer = () => {
   return (
     <footer className={styles.footer}>
-        <div class={`contenedor ${styles.contenido  }`}>
+        <div className={`contenedor ${styles.contenido  }`}>
             <nav className={styles.navegacion}>
                       <Link href="/">Inicio</Link>
                       <Link href="/nosotros">Nosotros</Link>
