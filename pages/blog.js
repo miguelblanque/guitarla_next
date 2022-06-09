@@ -5,7 +5,7 @@ import styles from '../styles/Blog.module.css'
 
 const Blog = ({entradas}) => {
   
-console.log(entradas)
+//console.log(entradas)
 
   return (
     <Layout 
