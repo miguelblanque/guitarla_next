@@ -30,7 +30,7 @@ const Blog = ({entradas}) => {
 // Funcion getServerSideProps para consumir api y obtener los datos en cada request. Al
 export async function getStaticProps(){
 
-  const url = 'http://localhost:1337/blogs/'
+  const url = `${process.env.NEXT_PUBLIC_API_URL}/blogs/`
   const respuesta = await fetch(url)
   const entradas = await respuesta.json()
 
