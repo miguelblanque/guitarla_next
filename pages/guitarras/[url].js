@@ -47,7 +47,7 @@ export async function getServerSideProps({query:{url}}){
     const respuesta = await fetch(urlGuitarra)
     const guitarra = await respuesta.json()
 
-    console.log(guitarra)
+    // console.log(guitarra)
 
     return {
         props:{
