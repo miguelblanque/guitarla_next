@@ -33,6 +33,7 @@ export default function Home({guitarras, curso, entradas}) {
 
       </Layout>
 
+      
     
       </div>
       
