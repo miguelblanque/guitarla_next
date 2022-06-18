@@ -8,7 +8,7 @@ const Header = ({guitarra}) => {
  
   const router = useRouter()
 
-  console.log('ruta: ',router.pathname)
+  // console.log('ruta: ',router.pathname)
 
   return (
     <header className={styles.header}>
