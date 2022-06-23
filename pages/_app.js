@@ -25,10 +25,11 @@ function MyApp({ Component, pageProps }) {
 
   //guardamos el carrito en LocalStorage
   useEffect(()=> {
+    if(carrito.length>0){
     localStorage.setItem('carrito', JSON.stringify(carrito)) ;
         console.log('Guardando en LS: ',carrito)
-       
-  }, [carrito]);
+    }
+  }, [carrito])
 
 
 
