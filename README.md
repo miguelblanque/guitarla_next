@@ -87,11 +87,10 @@ Eliminar /node_modules, y lanzar  npm i ó yarn install
 
 
 
-Consumir API
+Strapi deploy with heroku
 
-cuando la informacion no cambia en cada request utilizamos:
-getStaticProps- Obtener los dataos cuando se crea el build
-getStaticPaths- Obtener el listado de paginas que se van a crear cuando se realiza un build
+https://boiling-brook-93263.herokuapp.com
 
-Cuando la informacion cambia continuamente utilizamos.
-getServerSideProps - Los datos se obtienen en cada request
+
+App deploy with vercel 
+
