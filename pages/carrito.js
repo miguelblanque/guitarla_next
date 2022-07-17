@@ -26,7 +26,7 @@ return (
                 <h2>Articulos</h2>
                 {carrito.length === 0 ? 'Carrito Vacio' : (
                   carrito.map( producto =>(
-                    <div key ={producto.id} className={styles.producto}>
+                    <div key ={producto._id} className={styles.producto}>
                         <div>
                             <Image layout="responsive" width={250} height={500} src={producto.imagen}
                              alt={producto.nombre}/>
@@ -41,7 +41,7 @@ return (
                                       className={styles.select}
                                       onChange={(e) => actualizarCantidad({
                                          cantidad: e.target.value,
-                                         id: producto.id,
+                                         id: producto._id,
                                         })
                                       }
                                   >
@@ -71,7 +71,7 @@ return (
 
                         <button type="button"
                         className={styles.eliminar}
-                        onClick={() => eliminarProducto(producto.id)}
+                        onClick={() => eliminarProducto(producto._id)}
                         >x</button>
                     </div>
                   ))
