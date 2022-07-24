@@ -1,5 +1,12 @@
 Proyecto GuitarLa - Proyecto de venta de guitarras con Next.js, Strapi, mongodb, cloudinary y localstorage para carrito
 
+
+App deploy with vercel 
+
+https://guitarla-next-7rvn8jjxb-miguelblanque-gmailcom.vercel.app
+
+
+
 Página principal de la tienda
 
 
@@ -90,7 +97,4 @@ Eliminar /node_modules, y lanzar  npm i ó yarn install
 Strapi deploy with heroku
 
 https://boiling-brook-93263.herokuapp.com
-
-
-App deploy with vercel 
 
